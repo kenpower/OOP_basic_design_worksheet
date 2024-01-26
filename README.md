@@ -28,3 +28,7 @@ Your game will need at least 4 classes for 4 different responsibilities:
 - Watch out for Demeter violations
 - It's ok for classes to contain other classes, but you don't have to.
 - Put all decisions (`if` statements) in the class that has the responsibility of that decision
+
+## Submission
+
+Upload the `.cpp` file to the assignment on BB
