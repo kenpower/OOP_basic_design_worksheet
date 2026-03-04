@@ -30,7 +30,7 @@ Your game will need at least 4 classes for 4 different responsibilities. **Befor
 - Put all decisions (`if` statements) in the class that has the responsibility of that decision
 - PlayerRenderer will need some position information from Player — think carefully about the minimum it needs to know.
 
-## [Optional] Advanced Step (if you'v completed the 4 classes)
+## [Optional] Advanced Step (if you've completed the 4 classes)
 
 Your implementation of PlayerRenderer probably calles a getter on Player. Can you redesign this so PlayerRenderer has zero getters to call on Player?
 
