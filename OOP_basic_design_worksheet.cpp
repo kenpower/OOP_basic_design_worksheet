@@ -28,12 +28,11 @@
 
     
     int main() {
-    sf::RenderWindow window(sf::VideoMode(1200, 1000), "SFML Circle Example");
+        sf::RenderWindow window(sf::VideoMode({ 1200, 1000 }), "SFML Circle Example");
 
     while (window.isOpen()) {
-        sf::Event event;
-        while (window.pollEvent(event)) {
-            if (event.type == sf::Event::Closed)
+        while (const auto event = window.pollEvent()) {
+            if (event->is<sf::Event::Closed>())
                 window.close();
         }
       
@@ -41,7 +40,7 @@
 
         sf::CircleShape circle(50);
         circle.setFillColor(sf::Color::Yellow);
-        circle.setPosition(500,250); // Set position on the window
+        circle.setPosition({ 500,250 }); // Set position on the window
         window.draw(circle);
  
         window.display();
